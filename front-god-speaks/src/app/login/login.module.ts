@@ -5,8 +5,11 @@ import { FormsModule } from '@angular/forms';
 import { LoginRouterModule } from './login-routing.module';
 import { LoginComponent } from './login.component';
 
+import {MatInputModule} from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
+
 @NgModule({
-    imports: [ CommonModule, FormsModule, LoginRouterModule ],
+    imports: [ CommonModule, FormsModule, LoginRouterModule, MatInputModule, MatButtonModule ],
     declarations: [ LoginComponent ],
     providers: []
 })
